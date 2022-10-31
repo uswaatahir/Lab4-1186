@@ -1,0 +1,90 @@
+#yellow{
+    background-color: yellow ;
+    border: 2px solid black;
+    width: 21%;
+    transition: transform;
+}
+h2{
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+}
+
+#yellow:hover{
+    transform: rotate(180deg);
+}
+#rotate{
+    background-color: red;
+    border: 2px solid black;
+    width: 125px;
+    height: 125px;
+    margin-left: 10%;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+}
+#rotate:hover{
+    width: 245px;
+    height: 245px;
+    transform: rotate(180deg);
+}
+.width{
+    width: 25%;
+}
+#greyscale img:hover{
+    filter: grayscale(100%);
+}
+#blur img:hover{
+    filter: blur(6px);
+}
+#opacity img:hover{
+    filter: opacity(32%);
+}
+#shadowtext h1{
+    margin-left: 3%;
+    text-shadow: 2px 2px 10px purple;
+}
+
+.responsive .gallery {
+    width: 22%;
+    padding: 2px;
+}
+@media screen and (max-width : 800px) {
+    .responsive .gallery {
+        width: 22%;
+    }
+}
+@media screen and (min-width: 300px) and (max-width :  801px) {
+    .responsive .gallery {
+        width: 47%;
+    }
+}
+@media screen and (max-width : 301px) {
+    .responsive .gallery {
+        width: 95%;
+    }
+}
+.gallery{
+    margin: 1px;
+    border: 1px solid black;
+    float: left;
+    width: 22%;
+    padding: 10px;
+    margin-right: 29px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.gallery img{
+    width: 100%;
+} 
+.desc{
+    padding: 10px;
+    text-align: center;
+}
+#clear{
+    clear: both;
+}
+#shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
